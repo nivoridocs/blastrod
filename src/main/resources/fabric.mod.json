@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "blastrod",
+  "version": "${version}",
+  "name": "Blast Rod",
+  "description": "Add a rod that breaks blocks it's pushed into.",
+  "authors": [
+    "Niv Oridocs"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "https://github.com/nivoridocs/blastrod",
+    "sources": "https://github.com/nivoridocs/blastrod"
+  },
+  "license": "MIT",
+  "icon": "assets/blastrod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "niv.blastrod.BlastrodMod"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "blastrod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*"
+  }
+}
