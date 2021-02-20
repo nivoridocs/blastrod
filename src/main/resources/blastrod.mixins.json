@@ -2,7 +2,9 @@
   "required": true,
   "package": "niv.blastrod.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [],
+  "mixins": [
+    "PistonHandlerMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {
