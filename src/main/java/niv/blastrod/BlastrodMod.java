@@ -22,14 +22,16 @@ public class BlastrodMod implements ModInitializer {
 	public static final BlastrodBlock BLASTROD =
 			new BlastrodBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f));
 
+	public static final BlockItem BLASTROD_ITEM =
+			new BlockItem(BLASTROD, new FabricItemSettings().group(ItemGroup.REDSTONE));
+
 	@Override
 	public void onInitialize() {
 		log.info("[{}] Initializing", MOD_NAME);
 
 		Identifier blastrodId = new Identifier(MOD_ID, "blastrod");
 		Registry.register(Registry.BLOCK, blastrodId, BLASTROD);
-		Registry.register(Registry.ITEM, blastrodId,
-				new BlockItem(BLASTROD, new FabricItemSettings().group(ItemGroup.REDSTONE)));
+		Registry.register(Registry.ITEM, blastrodId, BLASTROD_ITEM);
 	}
 
 }

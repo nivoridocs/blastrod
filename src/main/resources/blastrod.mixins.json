@@ -3,7 +3,9 @@
   "package": "niv.blastrod.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "PistonHandlerMixin"
+    "PistonHandlerMixin",
+    "PistonBlockMixin",
+    "BlockMixin"
   ],
   "client": [],
   "server": [],

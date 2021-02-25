@@ -17,6 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import niv.blastrod.block.BlastrodBlock;
+import niv.blastrod.util.Scopes;
 
 @Mixin(PistonHandler.class)
 public class PistonHandlerMixin {
@@ -39,7 +40,9 @@ public class PistonHandlerMixin {
 
 	@Inject(method = "calculatePush()Z", at = @At("HEAD"))
 	public void calculatePushHead(CallbackInfoReturnable<Boolean> info) {
+		Scopes.blastedBlocks.remove(this.hashCode());
 		this.blastedBlocks.clear();
+		Scopes.blastedBlocks.put(this.hashCode(), this.blastedBlocks);
 	}
 
 	@Redirect(
