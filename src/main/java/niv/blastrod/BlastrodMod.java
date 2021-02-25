@@ -29,7 +29,7 @@ public class BlastrodMod implements ModInitializer {
 	public void onInitialize() {
 		log.info("[{}] Initializing", MOD_NAME);
 
-		Identifier blastrodId = new Identifier(MOD_ID, "blastrod");
+		Identifier blastrodId = new Identifier(MOD_ID, "blast_rod");
 		Registry.register(Registry.BLOCK, blastrodId, BLASTROD);
 		Registry.register(Registry.ITEM, blastrodId, BLASTROD_ITEM);
 	}

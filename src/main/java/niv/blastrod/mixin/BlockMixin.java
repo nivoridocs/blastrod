@@ -1,8 +1,6 @@
 package niv.blastrod.mixin;
 
 import static niv.blastrod.BlastrodMod.BLASTROD_ITEM;
-import static niv.blastrod.BlastrodMod.MOD_NAME;
-import static niv.blastrod.BlastrodMod.log;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
