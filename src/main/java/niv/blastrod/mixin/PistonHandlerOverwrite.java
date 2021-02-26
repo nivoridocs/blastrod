@@ -154,12 +154,11 @@ public abstract class PistonHandlerOverwrite {
 				if (PistonBlock.isMovable(targetState, this.world, targetPos, this.motionDirection,
 						true, motionSource)) {
 					this.blastedBlocks.add(targetPos);
+					return true;
 				}
 			}
-			return true;
-		} else {
-			return false;
 		}
+		return false;
 	}
 
 	private boolean onDefaultMove(Queue<QueueItem> queue, BlockPos blockPos,
