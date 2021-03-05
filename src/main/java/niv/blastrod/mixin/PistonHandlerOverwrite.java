@@ -18,6 +18,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import niv.blastrod.BlastrodMod;
 import niv.blastrod.block.BlastrodBlock;
+import niv.blastrod.util.Global;
 
 @Mixin(PistonHandler.class)
 public abstract class PistonHandlerOverwrite {
@@ -96,6 +97,8 @@ public abstract class PistonHandlerOverwrite {
 
 		this.blastedBlocks.removeAll(this.movedBlocks);
 		this.brokenBlocks.addAll(this.blastedBlocks);
+
+		Global.blastedBlocks.addAll(this.blastedBlocks);
 
 		return result;
 	}
