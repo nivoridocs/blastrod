@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "niv.blastrod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "PistonHandlerOverwrite"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

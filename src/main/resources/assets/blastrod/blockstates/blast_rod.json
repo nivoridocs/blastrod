@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "blastrod:block/blast_rod",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "blastrod:block/blast_rod",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "blastrod:block/blast_rod",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "blastrod:block/blast_rod",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "blastrod:block/blast_rod"
+    },
+    "facing=west": {
+      "model": "blastrod:block/blast_rod",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
