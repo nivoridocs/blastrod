@@ -3,13 +3,13 @@
   "id": "blastrod",
   "version": "${version}",
   "name": "Blast Rod",
-  "description": "Add a rod that breaks blocks it's pushed into.",
+  "description": "Adds the new Blast Rod that breaks every movable block is pushed into.",
   "authors": [
     "Niv Oridocs"
   ],
   "contributors": [],
   "contact": {
-    "homepage": "https://github.com/nivoridocs/blastrod",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/blast-rod",
     "sources": "https://github.com/nivoridocs/blastrod"
   },
   "license": "MIT",
